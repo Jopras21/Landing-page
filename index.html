@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+        alt="yourLogo"
+      />
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+      <ul>
+        <li>
+          <a href="#home" class="active"
+            ><i class="fa-solid fa-home"></i>HOME</a
+          >
+        </li>
+        <li>
+          <a href="#about"><i class="fa-solid fa-user"></i>ABOUT</a>
+        </li>
+        <li>
+          <a href="#product"
+            ><i class="fa-solid fa-cart-shopping show-cart"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <h1>Vortex Store</h1>
+      <img
+        src="https://i.redd.it/f9b3cwd0o1n91.jpg"
+        class="object-fit-cover"
+        alt="cover"
+      />
+    </div>
+
+    <div class="carousel">
+      <section id="home">
+        <div class="container m-0 p-0" id="home">
+          <div class="carousel">
+            <h1>Our Best Mechanical Keyboard</h1>
+            <input type="radio" name="slides" checked="checked" id="slide-1" />
+            <input type="radio" name="slides" id="slide-2" />
+            <input type="radio" name="slides" id="slide-3" />
+            <input type="radio" name="slides" id="slide-4" />
+            <input type="radio" name="slides" id="slide-5" />
+            <input type="radio" name="slides" id="slide-6" />
+            <ul class="carousel__slides">
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Keychron-V3-Max-wireless-mechanical-keyboard-2.jpg?v=1708237422"
+                      class="carousel-img"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    Keychron V3 Max
+                    <span class="credit"
+                      >The best tenkeyless mechanical keyboard</span
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://media.mmorpg.com/images/contentImages/82024/Galaxy80-Final.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    Epomaker x Feker Galaxy80
+                    <span class="credit">The next-best keyboard</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/C3-Pro-4.jpg?v=1693454863"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    Keychron C3 Pro
+                    <span class="credit">A tenkeyless starter keyboard</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Keychron-Q6-Max-100_-Layout-QMK_VIA-Wireless-Custom-Mechanical-Keyboard-Aluminium-White.jpg?v=1705460929"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    Keychron Q6 Max
+                    <span class="credit">A fancy full-size option</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://i.rtings.com/assets/products/Dea2hN8R/razer-pro-type-ultra/design-small.jpg?format=auto"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    Razer Pro Type Ultra
+                    <span class="credit"
+                      >Comfortable restless gaming experience</span
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img
+                      src="https://i.rtings.com/assets/products/RODjFo4y/nuphy-air75-v2-air60-v2-air96-v2/design-medium.jpg?format=auto"
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    NuPhy Air75 V2
+                    <span class="credit"
+                      >Best mid-range mechanical keyboard</span
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="carousel__thumbnails">
+              <li>
+                <label for="slide-1"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Keychron-V3-Max-wireless-mechanical-keyboard-2.jpg?v=1708237422"
+                    alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-2"
+                  ><img
+                    src="https://media.mmorpg.com/images/contentImages/82024/Galaxy80-Final.jpg"
+                    alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-3"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/C3-Pro-4.jpg?v=1693454863"
+                    alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-4"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Keychron-Q6-Max-100_-Layout-QMK_VIA-Wireless-Custom-Mechanical-Keyboard-Aluminium-White.jpg?v=1705460929"
+                    alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-5"
+                  ><img
+                    src="https://i.rtings.com/assets/products/Dea2hN8R/razer-pro-type-ultra/design-small.jpg?format=auto"
+                    alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-6"
+                  ><img
+                    src="https://i.rtings.com/assets/products/RODjFo4y/nuphy-air75-v2-air60-v2-air96-v2/design-medium.jpg?format=auto"
+                    alt=""
+                /></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- section -->
+    <section id="about">
+      <div class="content">
+        <div class="upper-about">
+          <img src="https://placehold.co/400" alt="placeholder" />
+          <div class="desc-about">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque efficitur, neque sit amet tincidunt pulvinar, neque
+              enim mattis lorem, eu luctus risus est ac metus. Praesent quis
+              sapien ac est ultrices molestie. Proin lobortis lectus et quam
+              sodales mattis. Curabitur bibendum vehicula fermentum. Sed rhoncus
+              risus nec nisi pulvinar tincidunt. Phasellus id suscipit sem.
+              Praesent volutpat nisl a euismod dictum. Aliquam viverra blandit
+              mollis. Morbi posuere, ex vel blandit suscipit, dui erat lacinia
+              elit, ut molestie lorem magna sed erat. Pellentesque vel convallis
+              augue. Duis laoreet iaculis libero a euismod. Sed eleifend, purus
+              ut maximus sodales, odio enim venenatis purus, vitae ultricies
+              ligula augue quis nisl. Integer ac tellus suscipit, suscipit augue
+              in, vestibulum sem.
+            </p>
+          </div>
+        </div>
+        <div class="lower-about">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque efficitur, neque sit amet tincidunt pulvinar, neque
+            enim mattis lorem, eu luctus risus est ac metus. Praesent quis
+            sapien ac est ultrices molestie. Proin lobortis lectus et quam
+            sodales mattis. Curabitur bibendum vehicula fermentum. Sed rhoncus
+            risus nec nisi pulvinar tincidunt. Phasellus id suscipit sem.
+            Praesent volutpat nisl a euismod dictum. Aliquam viverra blandit
+            mollis. Morbi posuere, ex vel blandit suscipit, dui erat lacinia
+            elit, ut molestie lorem magna sed erat. Pellentesque vel convallis
+            augue. Duis laoreet iaculis libero a euismod. Sed eleifend, purus ut
+            maximus sodales, odio enim venenatis purus, vitae ultricies ligula
+            augue quis nisl. Integer ac tellus suscipit, suscipit augue in,
+            vestibulum sem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="content">
+        <div class="upper-product">
+          <button id="prev" class="nav-button">‹</button>
+          <div class="card-container">
+            <div class="cards">
+              <!-- Repeat this card-product div for each product -->
+              <div class="card-product">
+                <div class="img-card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+                    alt="keyboard1"
+                    class="keyboard"
+                  />
+                </div>
+                <div class="desc-product">
+                  <h3>Keyboard 1</h3>
+                  <h2 class="price">Rp61.<small>000</small></h2>
+                  <div class="hide-prod">
+                    <div class="details">Lorem ipsum</div>
+                    <div class="button-prod">
+                      <button class="cart-button" type="submit">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                      <button class="buy-button" type="submit">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-product">
+                <div class="img-card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+                    alt="keyboard1"
+                    class="keyboard"
+                  />
+                </div>
+                <div class="desc-product">
+                  <h3>Keyboard 1</h3>
+                  <h2 class="price">Rp61.<small>000</small></h2>
+                  <div class="hide-prod">
+                    <div class="details">Lorem ipsum</div>
+                    <div class="button-prod">
+                      <button class="cart-button" type="submit">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                      <button class="buy-button" type="submit">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-product">
+                <div class="img-card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+                    alt="keyboard1"
+                    class="keyboard"
+                  />
+                </div>
+                <div class="desc-product">
+                  <h3>Keyboard 1</h3>
+                  <h2 class="price">Rp61.<small>000</small></h2>
+                  <div class="hide-prod">
+                    <div class="details">Lorem ipsum</div>
+                    <div class="button-prod">
+                      <button class="cart-button" type="submit">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                      <button class="buy-button" type="submit">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-product">
+                <div class="img-card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+                    alt="keyboard1"
+                    class="keyboard"
+                  />
+                </div>
+                <div class="desc-product">
+                  <h3>Keyboard 1</h3>
+                  <h2 class="price">Rp61.<small>000</small></h2>
+                  <div class="hide-prod">
+                    <div class="details">Lorem ipsum</div>
+                    <div class="button-prod">
+                      <button class="cart-button" type="submit">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                      <button class="buy-button" type="submit">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="next" class="nav-button">›</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <div class="upper-footer">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmHn7hDycWvYvGnj50dxygz2EUz8MBKKCqg&s"
+            alt="yourLogo"
+          />
+          <div class="right-footer">
+            <div class="upper-right-footer">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </div>
+            <div class="lower-right-footer">
+              <input type="checkbox" />
+              <p>By subscribing, you are agree to our Terms & Condition</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="middle-footer">
+          <p>CONTACT</p>
+          <div class="social-media">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <hr />
+        <div class="lower-footer">
+          <p>©2024 Jonathan Prasetyo. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
