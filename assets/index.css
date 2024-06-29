@@ -28,7 +28,7 @@ html {
 section {
   padding: 50px 0;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   justify-content: center;
   text-align: center;
 }
@@ -222,6 +222,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
   }
 }
 
@@ -232,6 +233,7 @@ body {
   padding: 0;
   top: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -263,7 +265,7 @@ nav img {
   border: 1px solid white;
   background-color: #2e2d2d;
   border-radius: 30px;
-  padding: 8px;
+  padding: 8px 20px;
 }
 
 .search input[type="text"] {
@@ -271,6 +273,7 @@ nav img {
   margin-left: 7px;
   background-color: transparent;
   border: none;
+  color: white;
 }
 
 .search input[type="text"]:focus {
@@ -362,8 +365,69 @@ nav a.active i {
   transition: transform 0.3s ease-out;
 }
 
+/* about */
+#about {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #00000000;
+}
+
 .content {
-  margin: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.desc-about {
+  padding: 20px;
+}
+
+.desc-about h2 {
+  font-size: 2rem;
+  color: #eaeaea;
+}
+
+.desc-about p {
+  font-size: 1rem;
+  color: #d5d5d5;
+}
+
+.lower-about {
+  margin-top: 20px;
+}
+
+.lower-about p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .desc-about,
+  .parallax {
+    order: 1;
+    text-align: center;
+  }
+
+  .desc-about {
+    padding-bottom: 20px;
+  }
+
+  .parallax {
+    order: 2;
+  }
+}
+
+/* Parallax effect */
+.parallax {
+  transform: translateY(0);
+}
+
+.parallax[data-speed="0.5"] {
+  transition: transform 0.5s ease-out;
+}
+
+.parallax[data-speed="0.3"] {
+  transition: transform 0.3s ease-out;
 }
 
 .upper-home {
@@ -408,6 +472,11 @@ nav a.active i {
   margin: 0 10px;
   flex: 0 0 auto;
   position: relative;
+}
+
+.keyboard {
+  width: 100%;
+  border-radius: 13px;
 }
 
 .nav-button {

@@ -1,3 +1,4 @@
+// navbar
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("nav a");
 
@@ -19,6 +20,7 @@ window.onscroll = () => {
   });
 };
 
+// Banner
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const banner = document.querySelector(".banner");
@@ -35,19 +37,58 @@ window.addEventListener("scroll", () => {
   bannerText.style.opacity = 1 - (scrollY / bannerHeight) * opacityRate;
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+// Carousel
+document.addEventListener("DOMContentLoaded", (event) => {
   const slides = document.querySelectorAll('input[name="slides"]');
-  let currentIndex = 0;
+  const carouselSection = document.querySelector("#home");
+  let animationInterval;
 
-  function showNextSlide() {
-    slides[currentIndex].checked = false;
-    currentIndex = (currentIndex + 1) % slides.length;
-    slides[currentIndex].checked = true;
-  }
+  // Function to get the current slide index
+  const getCurrentSlideIndex = () => {
+    let currentIndex = 0;
+    slides.forEach((slide, index) => {
+      if (slide.checked) {
+        currentIndex = index;
+      }
+    });
+    return currentIndex;
+  };
 
-  setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+  // Function to start the animation
+  const startAnimation = () => {
+    animationInterval = setInterval(() => {
+      const currentIndex = getCurrentSlideIndex();
+      const nextIndex = (currentIndex + 1) % slides.length;
+      slides[nextIndex].checked = true;
+    }, 2000); // 2000ms delay for animation to the next slide
+  };
+
+  // Function to stop the animation
+  const stopAnimation = () => {
+    clearInterval(animationInterval);
+  };
+
+  // Intersection Observer to detect when the carousel section is in view
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startAnimation();
+        } else {
+          stopAnimation();
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(carouselSection);
 });
 
+// about
+
+
+// card
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 const cardContainer = document.querySelector(".card-container");
